@@ -1,0 +1,21 @@
+-------------- START BACKEND SERVER --------------
+
+npm run dev
+
+
+-------------- START FRONTEND SERVER --------------
+
+ng serve
+
+-------------- Create Angular Page --------------
+
+ng generate component json-format
+
+
+ng version // It will print the Angular CLI and Angular framework versions.
+
+
+
+-------------- UPLOAD NEW Angular Page --------------
+
+git init

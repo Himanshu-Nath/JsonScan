@@ -1,0 +1,20 @@
+# server
+server/node_modules/
+server/.env
+
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+
+# frontend
+jsonscan-frontend/node_modules/
+jsonscan-frontend/.vscode/
+jsonscan-frontend/.editorconfig/
+
+# Build output
+jsonscan-frontend/dist/
+jsonscan-frontend/build/
