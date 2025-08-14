@@ -19,3 +19,13 @@ ng version // It will print the Angular CLI and Angular framework versions.
 -------------- UPLOAD NEW Angular Page --------------
 
 git init
+git add .
+git commit -m "first commit"
+git branch -M main
+CREATE REPO IN GITHUB
+git remote add origin https://github.com/Himanshu-Nath/JsonScan.git
+git push -u origin master
+
+
+
+git rm -r --cached backend/node_modules/ (If you added node_modules by mistake remove it)

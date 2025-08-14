@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>JSON Formatter & Validator</h1>
+
+    <label for="jsonInput">Paste JSON here:</label>
+    <textarea [(ngModel)]="jsonInput" id="jsonInput" rows="10" placeholder="Paste your JSON here..."></textarea>
+
+    <label for="jsonOutput" style="margin-top: 20px;">Formatted JSON output:</label>
+    <textarea id="jsonOutput" rows="10" [value]="jsonOutput" readonly></textarea>
+
+    <div class="button-group" style="margin-top: 20px;">
+        <button (click)="formatJson()" class="btn-primary">Submit</button>
+        <button (click)="clear()" class="btn-clear">Clear</button>
+    </div>
+
+    <div class="error-msg" *ngIf="errorMsg">{{ errorMsg }}</div>
+</div>
