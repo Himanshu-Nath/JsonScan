@@ -1,1 +1,32 @@
-<p>qr-code works!</p>
+<div class="qr-card">
+
+    <mat-card class="qr-card">
+        <mat-card-title>QR Code Generator</mat-card-title>
+        <mat-card-content>
+          <form (ngSubmit)="generateQrCode()" #qrForm="ngForm">
+      
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>JSON Input</mat-label>
+                <textarea matInput rows="10" name="jsonInput" [(ngModel)]="jsonInput" placeholder="{ 'key': 'value' }"></textarea>
+              </mat-form-field>
+            
+            <button mat-raised-button color="primary" type="submit">Generate QR Code</button>
+          </form>
+        </mat-card-content>
+      </mat-card>
+      
+      <mat-card class="qr-display-card">
+        <mat-card-title>Your QR Code</mat-card-title>
+        <div *ngIf="qrCodeUrl">
+          <img [src]="qrCodeUrl" alt="QR Code" />
+        </div>
+        
+        <div *ngIf="errorMsg" class="error">
+          {{ errorMsg }}
+        </div>
+        <button mat-raised-button color="primary" (click)="clear()">Clear
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-card>
+  </div>
+  

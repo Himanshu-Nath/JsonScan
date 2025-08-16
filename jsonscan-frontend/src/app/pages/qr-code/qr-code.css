@@ -1,0 +1,19 @@
+
+.qr-card,
+.qr-display-card {
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.qr-image {
+  width: 250px;
+  height: 250px;
+  margin-top: 16px;
+}

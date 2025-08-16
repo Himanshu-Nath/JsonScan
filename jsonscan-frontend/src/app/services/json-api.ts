@@ -19,4 +19,11 @@ export class JsonApiService {
     const headers = new HttpHeaders({ 'Content-Type': 'text/plain' });
     return this.http.post<any>(this.apiUrl + 'to-xml', rawJson, { headers });
   }
+
+  jsonToQRCode(rawJson: string): Observable<any> {
+    const headers = new HttpHeaders({ 'Content-Type': 'text/plain' });
+    return this.http.post<any>(this.apiUrl + 'qrcode', rawJson, { headers, responseType: 'blob' as 'json' });
+  }
+
+  
 }

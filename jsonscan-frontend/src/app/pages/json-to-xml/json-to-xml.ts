@@ -77,27 +77,4 @@ export class JsonToXml {
     this.xmlOutput = '';
     this.errorMsg = '';
   }
-
-  // convertJsonToXml() {
-  //   this.loading = true;
-  //   try {
-  //     const json = JSON.parse(this.jsonInput);
-
-  //     this.http.post('http://localhost:3000/json/to-xml', json, { responseType: 'text' })
-  //       .subscribe({
-  //         next: (response) => {
-  //           this.xmlOutput = response;
-  //           this.loading = false;
-  //         },
-  //         error: (err) => {
-  //           this.xmlOutput = 'Error converting JSON to XML.';
-  //           this.loading = false;
-  //           console.error(err);
-  //         }
-  //       });
-  //   } catch (e) {
-  //     this.xmlOutput = 'Invalid JSON format.';
-  //     this.loading = false;
-  //   }
-  // }
 }
