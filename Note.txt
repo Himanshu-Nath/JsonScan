@@ -10,6 +10,10 @@ ng serve
 -------------- Create Angular Page --------------
 
 ng generate component json-format
+ng generate component pages/json-to-xml
+ng generate component pages/QR-code
+
+ng add @angular/material
 
 
 ng version // It will print the Angular CLI and Angular framework versions.

@@ -1,0 +1,29 @@
+.json-to-xml-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .json-xml-card {
+    width: 600px;
+    padding: 24px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .full-width {
+    width: 100%;
+    margin-top: 16px;
+  }
+  
+  .output-field {
+    margin-top: 24px;
+  }
+  
+  .spinner {
+    margin-top: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

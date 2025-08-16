@@ -1,0 +1,26 @@
+<div class="json-to-xml-container">
+    <mat-card class="json-xml-card">
+      <h2>JSON to XML Converter</h2>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>JSON Input</mat-label>
+        <textarea matInput rows="10" [(ngModel)]="jsonInput" placeholder="{ 'key': 'value' }"></textarea>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" (click)="convertJsonToXml()">Convert</button>
+  
+      <mat-form-field appearance="outline" class="full-width output-field">
+        <mat-label>XML Output</mat-label>
+        <textarea matInput rows="10" [value]="xmlOutput" readonly></textarea>
+      </mat-form-field>
+
+      
+      <button mat-raised-button color="primary" (click)="clear()">Clear
+        <mat-icon>delete</mat-icon>
+      </button>
+  
+      <mat-spinner *ngIf="loading" diameter="30" class="spinner"></mat-spinner>
+      <div class="error-msg" *ngIf="errorMsg">{{ errorMsg }}</div>
+    </mat-card>
+  </div>
+  

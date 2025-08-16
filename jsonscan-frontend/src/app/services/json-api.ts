@@ -8,10 +8,15 @@ import { Observable } from 'rxjs';
 })
 export class JsonApiService {
   private http = inject(HttpClient);
-  private apiUrl = 'http://localhost:3000/json/format';
+  private apiUrl = 'http://localhost:3000/json/';
 
   formatJson(rawJson: string): Observable<any> {
     const headers = new HttpHeaders({ 'Content-Type': 'text/plain' });
-    return this.http.post<any>(this.apiUrl, rawJson, { headers });
+    return this.http.post<any>(this.apiUrl + 'format', rawJson, { headers });
+  }
+
+  jsonToXml(rawJson: string): Observable<any> {
+    const headers = new HttpHeaders({ 'Content-Type': 'text/plain' });
+    return this.http.post<any>(this.apiUrl + 'to-xml', rawJson, { headers });
   }
 }

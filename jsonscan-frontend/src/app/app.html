@@ -1,2 +1,24 @@
-
-<router-outlet />
+<mat-sidenav-container class="app-container">
+    <mat-sidenav mode="side" opened>
+      <mat-nav-list>
+        <a mat-list-item routerLink="/json-format" routerLinkActive="active">JSON Format</a>
+        <a mat-list-item routerLink="/json-to-xml" routerLinkActive="active">JSON To XML</a>
+        <a mat-list-item routerLink="/qr-code" routerLinkActive="active">QR Code</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <mat-toolbar class="header">
+        <span>{{ title }}</span>
+      </mat-toolbar>
+  
+      <div class="main-content">
+        <router-outlet></router-outlet>
+      </div>
+  
+      <mat-toolbar class="footer">
+        © 2025 JsonScan. All rights reserved.
+      </mat-toolbar>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

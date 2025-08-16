@@ -1,0 +1,59 @@
+/* Full height layout */
+.app-container {
+  height: 100vh;
+}
+
+/* Light solid sidenav background */
+mat-sidenav {
+  background-color: #f5f7fa; /* light gray */
+  color: #2c3e50;
+  width: 220px;
+  box-shadow: inset -1px 0 0 #d3d3d3;
+  border-radius: 0 !important;
+  padding: 0;
+}
+
+/* Header styling */
+mat-toolbar.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #e0e4ec; /* soft light blue-gray */
+  color: #2c3e50;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer styling */
+mat-toolbar.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #e0e4ec;
+  color: #2c3e50;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Main content area */
+.main-content {
+  padding: 24px;
+  background-color: #ffffff; /* white for clarity */
+  min-height: calc(100vh - 128px); /* adjust if toolbar height changes */
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Active menu link */
+a.mat-list-item.active {
+  background-color: #dfe6f3;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Hover effect for sidenav links */
+.mat-list-item:hover {
+  background-color: #e9eef6;
+}
+
